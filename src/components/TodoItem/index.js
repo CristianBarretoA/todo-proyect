@@ -1,20 +1,13 @@
 import React from "react";
 import './TodoItem.css';
 
-export function TodoItem(props) {
-    const onComplete = () => {
-        alert('Completed: ' + props.text)
-    };
-
-    const onDelete = () => {
-        alert('Deleted:  ' + props.text)
-    };
+export function TodoItem( props ) {
 
     return (
         <li className={'TodoItem'}>
             <span
                 className={`Icon Icon-check ${props.completed && 'Icon-check--active'}`}
-                onClick={onComplete}
+                onClick={props.onCompleted}
             >
                 √
             </span>
@@ -23,7 +16,7 @@ export function TodoItem(props) {
             </p>
             <span
                 className="Icon Icon-delete"
-                onClick={onDelete}
+                onClick={props.onDeleted}
             >
                 X
             </span>
