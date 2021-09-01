@@ -6,6 +6,7 @@
     align-items: center;
     margin-top: 24px;
     box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.15);
+    color: black;
 }
 
 .TodoItem-p {
@@ -41,9 +42,9 @@
 
 .Icon-delete {
     position: absolute;
-    top: -24px;
+    top: 10px;
     right: 0;
-    color: cadetblue;
+    color: gray;
 }
 .Icon-delete:hover {
     color: red;

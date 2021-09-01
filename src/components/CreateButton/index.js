@@ -1,19 +1,16 @@
 import React from "react";
 import './CreateTodoButton.css';
 
-export function CreateTodoButton() {
-    /**
-     * Function that returns an alert message
-     * @param msg
-     */
-    const onClickButton = (msg) => {
-        alert(msg)
+export function CreateTodoButton(props) {
+
+    const onClickButton = () => {
+        props.setOpenModal(prevState => !prevState);
     };
 
     return (
         <button
             className={'CreateTodoButton'}
-            onClick={() => onClickButton('Test message')}
+            onClick={onClickButton}
         >
             +
         </button>
