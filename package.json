@@ -1,5 +1,5 @@
 {
-  "name": "introduccion-reactjs",
+  "name": "todo-proyect",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -41,5 +41,5 @@
   "devDependencies": {
     "gh-pages": "^3.2.3"
   },
-  "homepage": "https://cristianbarretoa.github.io/todo-proyect/"
+  "homepage": "https://cristianbarretoa.github.io/todo-proyect"
 }
